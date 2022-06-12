@@ -1,36 +1,39 @@
-public class Puffinduy {
+public class Puffinduy extends Hogwarts{
 
-    String diligence ;
-    String loyalty ;
-    String honesty ;
+    int diligence ;
+    int loyalty ;
+    int honesty ;
 
-    public Puffinduy(String diligence, String loyalty, String honesty) {
+    public Puffinduy(String name, String surname, int powerOfMagic, int transgression,
+                     int diligence, int loyalty,
+                     int honesty) {
+        super(name, surname, powerOfMagic, transgression);
         this.diligence = diligence;
         this.loyalty = loyalty;
         this.honesty = honesty;
     }
 
-    public String getDiligence() {
+    public int getDiligence() {
         return diligence;
     }
 
-    public void setDiligence(String diligence) {
+    public void setDiligence(int diligence) {
         this.diligence = diligence;
     }
 
-    public String getLoyalty() {
+    public int getLoyalty() {
         return loyalty;
     }
 
-    public void setLoyalty(String loyalty) {
+    public void setLoyalty(int loyalty) {
         this.loyalty = loyalty;
     }
 
-    public String getHonesty() {
+    public int getHonesty() {
         return honesty;
     }
 
-    public void setHonesty(String honesty) {
+    public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
 }

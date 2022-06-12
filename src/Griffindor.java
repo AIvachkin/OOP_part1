@@ -1,36 +1,38 @@
-public class Griffindor {
+public class Griffindor extends Hogwarts {
 
-    String nobility ;
-    String honor ;
-    String bravery ;
+    int nobility ;
+    int honor ;
+    int bravery ;
 
-    public Griffindor(String nobility, String honor, String bravery) {
+    public Griffindor(String name, String surname, int powerOfMagic, int transgression,
+                      int nobility, int honor, int bravery) {
+        super(name, surname, powerOfMagic, transgression);
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;
     }
 
-    public String getNobility() {
+    public int getNobility() {
         return nobility;
     }
 
-    public void setNobility(String nobility) {
+    public void setNobility(int nobility) {
         this.nobility = nobility;
     }
 
-    public String getHonor() {
+    public int getHonor() {
         return honor;
     }
 
-    public void setHonor(String honor) {
+    public void setHonor(int honor) {
         this.honor = honor;
     }
 
-    public String getBravery() {
+    public int getBravery() {
         return bravery;
     }
 
-    public void setBravery(String bravery) {
+    public void setBravery(int bravery) {
         this.bravery = bravery;
     }
 }

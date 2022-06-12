@@ -1,12 +1,15 @@
-public class Slizerin {
+public class Slizerin extends Hogwarts{
 
-    String cunning ;
-    String determination ;
-    String ambition ;
-    String resourcefulness ;
-    String thirstForPower ;
+    int cunning ;
+    int determination ;
+    int ambition ;
+    int resourcefulness ;
+    int thirstForPower ;
 
-    public Slizerin(String cunning, String determination, String ambition, String resourcefulness, String thirstForPower) {
+    public Slizerin(String name, String surname, int powerOfMagic, int transgression,
+                    int cunning, int determination, int ambition,
+                    int resourcefulness, int thirstForPower) {
+        super(name, surname, powerOfMagic, transgression);
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
@@ -14,43 +17,43 @@ public class Slizerin {
         this.thirstForPower = thirstForPower;
     }
 
-    public String getCunning() {
+    public int getCunning() {
         return cunning;
     }
 
-    public void setCunning(String cunning) {
+    public void setCunning(int cunning) {
         this.cunning = cunning;
     }
 
-    public String getDetermination() {
+    public int getDetermination() {
         return determination;
     }
 
-    public void setDetermination(String determination) {
+    public void setDetermination(int determination) {
         this.determination = determination;
     }
 
-    public String getAmbition() {
+    public int getAmbition() {
         return ambition;
     }
 
-    public void setAmbition(String ambition) {
+    public void setAmbition(int ambition) {
         this.ambition = ambition;
     }
 
-    public String getResourcefulness() {
+    public int getResourcefulness() {
         return resourcefulness;
     }
 
-    public void setResourcefulness(String resourcefulness) {
+    public void setResourcefulness(int resourcefulness) {
         this.resourcefulness = resourcefulness;
     }
 
-    public String getThirstForPower() {
+    public int getThirstForPower() {
         return thirstForPower;
     }
 
-    public void setThirstForPower(String thirstForPower) {
+    public void setThirstForPower(int thirstForPower) {
         this.thirstForPower = thirstForPower;
     }
 }

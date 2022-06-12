@@ -1,26 +1,46 @@
 public class Hogwarts {
 
-    String powerOfMagic ;
-    String transgression ;
+    String name ;
+    String surname ;
+    int powerOfMagic ;
+    int transgression ;
 
-    public Hogwarts(String powerOfMagic, String transgression) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public Hogwarts(String name, String surname , int powerOfMagic, int transgression) {
+        this.name = name ;
+        this.surname = surname ;
         this.powerOfMagic = powerOfMagic;
         this.transgression = transgression;
     }
 
-    public String getPowerOfMagic() {
+    public int getPowerOfMagic() {
         return powerOfMagic;
     }
 
-    public void setPowerOfMagic(String powerOfMagic) {
+    public void setPowerOfMagic(int powerOfMagic) {
         this.powerOfMagic = powerOfMagic;
     }
 
-    public String getTransgression() {
+    public int getTransgression() {
         return transgression;
     }
 
-    public void setTransgression(String transgression) {
+    public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
 }

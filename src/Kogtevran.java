@@ -1,46 +1,49 @@
-public class Kogtevran {
+public class Kogtevran extends Hogwarts {
 
-    String intelligence ;
-    String wisdom ;
-    String wit ;
-    String creativity ;
+    int intelligence ;
+    int wisdom ;
+    int wit ;
+    int creativity ;
 
-    public Kogtevran(String intelligence, String wisdom, String wit, String creativity) {
+    public Kogtevran(String name, String surname,int powerOfMagic, int transgression,
+                     int intelligence, int wisdom, int wit,
+                     int creativity) {
+        super(name, surname, powerOfMagic, transgression);
         this.intelligence = intelligence;
         this.wisdom = wisdom;
         this.wit = wit;
         this.creativity = creativity;
     }
 
-    public String getIntelligence() {
+    public int getIntelligence() {
         return intelligence;
     }
 
-    public void setIntelligence(String intelligence) {
+    public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
 
-    public String getWisdom() {
+    public int getWisdom() {
         return wisdom;
     }
 
-    public void setWisdom(String wisdom) {
+    public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
 
-    public String getWit() {
+    public int getWit() {
         return wit;
     }
 
-    public void setWit(String wit) {
+    public void setWit(int wit) {
         this.wit = wit;
     }
 
-    public String getCreativity() {
+    public int getCreativity() {
         return creativity;
     }
 
-    public void setCreativity(String creativity) {
+    public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
 }
