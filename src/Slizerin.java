@@ -1,10 +1,10 @@
 public class Slizerin extends Hogwarts{
 
-    int cunning ;
-    int determination ;
-    int ambition ;
-    int resourcefulness ;
-    int thirstForPower ;
+    private int cunning ;
+    private int determination ;
+    private int ambition ;
+    private int resourcefulness ;
+    private int thirstForPower ;
 
     public Slizerin(String name, String surname, int powerOfMagic, int transgression,
                     int cunning, int determination, int ambition,
@@ -55,5 +55,35 @@ public class Slizerin extends Hogwarts{
 
     public void setThirstForPower(int thirstForPower) {
         this.thirstForPower = thirstForPower;
+    }
+
+    public void print(Slizerin name) {
+        System.out.println(
+                name.getName() + " " +
+                        name.getSurname() + ": Сила магии - " +
+                        name.getPowerOfMagic() + "; Трансгрессия - " +
+                        name.getTransgression() + "; Хитрость - " +
+                        name.getCunning() + "; Решительность - " +
+                        name.getDetermination() + "; Амбициозность - " +
+                        name.getAmbition() + "; Находчивость - " +
+                        name.getResourcefulness() + "; Жажда власти - " +
+                        name.getThirstForPower()
+
+        );
+    }
+
+    public void comparison (Slizerin name) {
+        int sum = name.getAmbition() + name.getThirstForPower() + name.getResourcefulness() +
+                name.getDetermination() + name.getCunning();
+        int sum2 = this.getAmbition() + this.getCunning() + this.getDetermination() +
+                this.getResourcefulness() + this.getThirstForPower();
+        if (sum > sum2) {
+            System.out.println(name.getName() + " " + name.getSurname() +
+                    " - лучший Слизерианец, чем " + this.getName() +
+                    " " + this.getSurname());
+        } else System.out.println(this.getName() + " " + this.getSurname() +
+                " - лучший Слизерианец, чем " + name.getName() +
+                " " + name.getSurname())
+                ;
     }
 }

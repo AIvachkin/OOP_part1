@@ -5,7 +5,7 @@ public class Main {
 
         Griffindor harry = new Griffindor("Harry", "Potter", 60, 84,
                 71, 32, 46);
-        Griffindor gemiona = new Griffindor("Germiona", "Granger", 71,
+        Griffindor germiona = new Griffindor("Germiona", "Granger", 71,
                 95, 47, 36, 15);
         Griffindor ron = new Griffindor("Ron", "Wisley", 55, 29,
                 80, 67, 44);
@@ -29,15 +29,19 @@ public class Main {
         Kogtevran markus = new Kogtevran("Markus", "Belbi", 87, 46,
                 88, 54, 29, 11);
 
-        print (harry);
+        harry.print(harry);
+        padma.print(padma);
+        drako.print(drako);
+        zakharia.print(zakharia);
+        harry.comparison(germiona);
+        gregory.comparison(drako);
+        sedrick.comparison(zakharia);
+        padma.comparison(jou);
+        harry.comparison(markus);
+
 
     }
 
-    private static void print(Hogwarts name) {
-        System.out.println(
-                name.getName()
-        );
-    }
 
 
 }
