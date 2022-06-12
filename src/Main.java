@@ -1,23 +1,43 @@
 public class Main {
+
+
     public static void main(String[] args) {
 
-        Griffindor griffindor = new Griffindor("Garry", "Potter", 60, 84,
-                71, 32, 46) ;
-        Griffindor griffindor1 = new Griffindor("Germiona", "Granger", 71, 95,
-                47, 36, 15) ;
-        Griffindor griffindor2 = new Griffindor("Ron", "Wisley", 55, 29,
-                80, 67, 44) ;
-        Slizerin slizerin = new Slizerin("Drako", "Malfoy", 64,71,
-                69, 80, 100, 57, 37) ;
-        Slizerin slizerin1 = new Slizerin("Gragham", "Montegyu", 32, 48,
+        Griffindor harry = new Griffindor("Harry", "Potter", 60, 84,
+                71, 32, 46);
+        Griffindor gemiona = new Griffindor("Germiona", "Granger", 71,
+                95, 47, 36, 15);
+        Griffindor ron = new Griffindor("Ron", "Wisley", 55, 29,
+                80, 67, 44);
+        Slizerin drako = new Slizerin("Drako", "Malfoy", 64, 71,
+                69, 80, 100, 57, 37);
+        Slizerin gragham = new Slizerin("Gragham", "Montegyu", 32, 48,
                 81, 47, 12, 10, 9);
-        Slizerin slizerin2 = new Slizerin("Gregory", "Goyle", 57, 60, 42,
-                47, 51, 27, 28) ;
+        Slizerin gregory = new Slizerin("Gregory", "Goyle", 57,
+                60, 42, 47, 51, 27, 28);
 
+        Puffinduy zakharia = new Puffinduy("Zakharia", "Smith", 71, 85,
+                46, 35, 11);
+        Puffinduy sedrick = new Puffinduy("Sedrick", "Diggery", 47, 10,
+                67, 58, 90);
+        Puffinduy jastine = new Puffinduy("Jastine", "Finch-Fletchie", 55,
+                35, 78, 24, 60);
+        Kogtevran jou = new Kogtevran("Jou", "Chang", 49, 87,
+                44, 78, 61, 55);
+        Kogtevran padma = new Kogtevran("Padma", "Patil", 70, 55,
+                68, 27, 90, 47);
+        Kogtevran markus = new Kogtevran("Markus", "Belbi", 87, 46,
+                88, 54, 29, 11);
 
-
-
-
+        print (harry);
 
     }
+
+    private static void print(Hogwarts name) {
+        System.out.println(
+                name.getName()
+        );
+    }
+
+
 }
